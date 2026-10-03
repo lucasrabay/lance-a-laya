@@ -1,0 +1,24 @@
+[
+ {
+  "gpu": "Tesla T4",
+  "model": "ft-v1",
+  "questions": 5,
+  "n_single": 200,
+  "p50_ms": 31.6,
+  "p90_ms": 34.4,
+  "mean_ms": 31.6,
+  "batched_windows": 1165,
+  "batched_windows_per_s": 46.2
+ },
+ {
+  "gpu": "NVIDIA L4",
+  "model": "ft-v1",
+  "questions": 5,
+  "n_single": 200,
+  "p50_ms": 37.8,
+  "p90_ms": 39.5,
+  "mean_ms": 37.8,
+  "batched_windows": 1165,
+  "batched_windows_per_s": 58.7
+ }
+]

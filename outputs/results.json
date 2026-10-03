@@ -1,0 +1,630 @@
+{
+ "test_match": "arg-fra-2022",
+ "gold_windows": 150,
+ "gold_unsure": 9,
+ "truth_events": {
+  "goal": 6,
+  "card": 7,
+  "big_chance": 12,
+  "controversy": 16
+ },
+ "ignored_unsure_moments": {
+  "big_chance": 11,
+  "controversy": 6
+ },
+ "methods": {
+  "keyword": {
+   "window": {
+    "goal": {
+     "n": 141,
+     "positives": 12,
+     "precision": 0.16666666666666666,
+     "recall": 0.16666666666666666,
+     "f1": 0.16666666666666666,
+     "f1_weighted": 0.07557557557557558,
+     "precision_weighted": 0.04886731391585761,
+     "recall_weighted": 0.16666666666666666,
+     "ap": 0.27390480111156595
+    },
+    "big_chance": {
+     "n": 141,
+     "positives": 16,
+     "precision": 1.0,
+     "recall": 0.25,
+     "f1": 0.4,
+     "f1_weighted": 0.4,
+     "precision_weighted": 1.0,
+     "recall_weighted": 0.25,
+     "ap": 0.5876723489529763
+    },
+    "controversy": {
+     "n": 141,
+     "positives": 20,
+     "precision": 0.5714285714285714,
+     "recall": 0.4,
+     "f1": 0.47058823529411764,
+     "f1_weighted": 0.2542622605767207,
+     "precision_weighted": 0.23079862437906,
+     "recall_weighted": 0.2830365510777882,
+     "ap": 0.4307216767330588
+    },
+    "card": {
+     "n": 141,
+     "positives": 4,
+     "precision": 0.3333333333333333,
+     "recall": 0.25,
+     "f1": 0.28571428571428575,
+     "f1_weighted": 0.1310195227765727,
+     "precision_weighted": 0.08877131099353322,
+     "recall_weighted": 0.25,
+     "ap": 0.3988095238095238
+    },
+    "intensity": {
+     "n": 141,
+     "accuracy": 0.3829787234042553,
+     "mae": 0.8652482269503546,
+     "confusion": {
+      "calm->calm": 51,
+      "building->calm": 51,
+      "building->building": 2,
+      "peak->calm": 35,
+      "peak->building": 1,
+      "peak->peak": 1
+     }
+    }
+   },
+   "event": {
+    "goal": {
+     "events": 6,
+     "caught": 3,
+     "triggers": 17,
+     "true_triggers": 3,
+     "recall": 0.5,
+     "precision": 0.17647058823529413,
+     "highlight_minutes": 12.1
+    },
+    "big_chance": {
+     "events": 12,
+     "caught": 5,
+     "triggers": 7,
+     "true_triggers": 5,
+     "recall": 0.4166666666666667,
+     "precision": 0.7142857142857143,
+     "highlight_minutes": 4.8
+    },
+    "controversy": {
+     "events": 16,
+     "caught": 11,
+     "triggers": 18,
+     "true_triggers": 11,
+     "recall": 0.6875,
+     "precision": 0.6111111111111112,
+     "highlight_minutes": 13.0
+    },
+    "card": {
+     "events": 7,
+     "caught": 4,
+     "triggers": 5,
+     "true_triggers": 4,
+     "recall": 0.5714285714285714,
+     "precision": 0.8,
+     "highlight_minutes": 4.0
+    }
+   }
+  },
+  "zero-shot": {
+   "window": {
+    "goal": {
+     "n": 141,
+     "positives": 12,
+     "precision": 0.3333333333333333,
+     "recall": 0.25,
+     "f1": 0.28571428571428575,
+     "f1_weighted": 0.20502376103190767,
+     "precision_weighted": 0.17376294591484465,
+     "recall_weighted": 0.25,
+     "ap": 0.31361064247560094
+    },
+    "big_chance": {
+     "n": 141,
+     "positives": 16,
+     "precision": 0.05405405405405406,
+     "recall": 0.125,
+     "f1": 0.07547169811320754,
+     "f1_weighted": 0.024488316297084187,
+     "precision_weighted": 0.015288953477983779,
+     "recall_weighted": 0.061482084690553745,
+     "ap": 0.0987739159277617
+    },
+    "controversy": {
+     "n": 141,
+     "positives": 20,
+     "precision": 0.13970588235294118,
+     "recall": 0.95,
+     "f1": 0.2435897435897436,
+     "f1_weighted": 0.08644491296716933,
+     "precision_weighted": 0.045250006788567845,
+     "recall_weighted": 0.9646204311152764,
+     "ap": 0.2588439923177058
+    },
+    "card": {
+     "n": 141,
+     "positives": 4,
+     "precision": 0.03225806451612903,
+     "recall": 0.25,
+     "f1": 0.05714285714285715,
+     "f1_weighted": 0.016040942835003867,
+     "precision_weighted": 0.008286311929448521,
+     "recall_weighted": 0.25,
+     "ap": 0.07742830086580087
+    },
+    "intensity": {
+     "n": 141,
+     "accuracy": 0.41843971631205673,
+     "mae": 0.7588652482269503,
+     "confusion": {
+      "calm->calm": 5,
+      "calm->building": 24,
+      "calm->peak": 22,
+      "building->building": 22,
+      "building->peak": 31,
+      "peak->calm": 3,
+      "peak->building": 2,
+      "peak->peak": 32
+     }
+    }
+   },
+   "event": {
+    "goal": {
+     "events": 6,
+     "caught": 5,
+     "triggers": 33,
+     "true_triggers": 5,
+     "recall": 0.8333333333333334,
+     "precision": 0.15151515151515152,
+     "highlight_minutes": 15.8
+    },
+    "big_chance": {
+     "events": 12,
+     "caught": 12,
+     "triggers": 67,
+     "true_triggers": 16,
+     "recall": 1.0,
+     "precision": 0.23880597014925373,
+     "highlight_minutes": 108.1
+    },
+    "controversy": {
+     "events": 16,
+     "caught": 16,
+     "triggers": 75,
+     "true_triggers": 26,
+     "recall": 1.0,
+     "precision": 0.3466666666666667,
+     "highlight_minutes": 161.7
+    },
+    "card": {
+     "events": 7,
+     "caught": 7,
+     "triggers": 71,
+     "true_triggers": 11,
+     "recall": 1.0,
+     "precision": 0.15492957746478872,
+     "highlight_minutes": 84.2
+    }
+   }
+  },
+  "fine-tuned": {
+   "window": {
+    "goal": {
+     "n": 141,
+     "positives": 12,
+     "precision": 0.875,
+     "recall": 0.5833333333333334,
+     "f1": 0.7000000000000001,
+     "f1_weighted": 0.5801317233809002,
+     "precision_weighted": 0.5769650655021834,
+     "recall_weighted": 0.5833333333333334,
+     "ap": 0.9280996236878588
+    },
+    "big_chance": {
+     "n": 141,
+     "positives": 16,
+     "precision": 0.6923076923076923,
+     "recall": 0.5625,
+     "f1": 0.6206896551724138,
+     "f1_weighted": 0.7387675774551276,
+     "precision_weighted": 0.8425032594524121,
+     "recall_weighted": 0.6577768729641693,
+     "ap": 0.6623403241870464
+    },
+    "controversy": {
+     "n": 141,
+     "positives": 20,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666,
+     "f1_weighted": 0.785083973811557,
+     "precision_weighted": 1.0,
+     "recall_weighted": 0.6462043111527647,
+     "ap": 0.779510720049498
+    },
+    "card": {
+     "n": 141,
+     "positives": 4,
+     "precision": 0.6666666666666666,
+     "recall": 0.5,
+     "f1": 0.5714285714285715,
+     "f1_weighted": 0.3593099345627602,
+     "precision_weighted": 0.28040854224698236,
+     "recall_weighted": 0.5,
+     "ap": 0.638095238095238
+    },
+    "intensity": {
+     "n": 141,
+     "accuracy": 0.723404255319149,
+     "mae": 0.3049645390070922,
+     "confusion": {
+      "calm->calm": 46,
+      "calm->building": 5,
+      "building->calm": 16,
+      "building->building": 31,
+      "building->peak": 6,
+      "peak->calm": 4,
+      "peak->building": 8,
+      "peak->peak": 25
+     }
+    }
+   },
+   "event": {
+    "goal": {
+     "events": 6,
+     "caught": 6,
+     "triggers": 6,
+     "true_triggers": 6,
+     "recall": 1.0,
+     "precision": 1.0,
+     "highlight_minutes": 6.6
+    },
+    "big_chance": {
+     "events": 12,
+     "caught": 9,
+     "triggers": 14,
+     "true_triggers": 10,
+     "recall": 0.75,
+     "precision": 0.7142857142857143,
+     "highlight_minutes": 12.1
+    },
+    "controversy": {
+     "events": 16,
+     "caught": 12,
+     "triggers": 20,
+     "true_triggers": 12,
+     "recall": 0.75,
+     "precision": 0.6,
+     "highlight_minutes": 12.5
+    },
+    "card": {
+     "events": 7,
+     "caught": 4,
+     "triggers": 5,
+     "true_triggers": 4,
+     "recall": 0.5714285714285714,
+     "precision": 0.8,
+     "highlight_minutes": 3.5
+    }
+   }
+  },
+  "claude-teacher": {
+   "window": {
+    "goal": {
+     "n": 141,
+     "positives": 12,
+     "precision": 0.9090909090909091,
+     "recall": 0.8333333333333334,
+     "f1": 0.8695652173913043,
+     "f1_weighted": 0.8695652173913043,
+     "precision_weighted": 0.9090909090909091,
+     "recall_weighted": 0.8333333333333334,
+     "ap": 0.8481855592966703
+    },
+    "big_chance": {
+     "n": 141,
+     "positives": 16,
+     "precision": 0.6521739130434783,
+     "recall": 0.9375,
+     "f1": 0.7692307692307693,
+     "f1_weighted": 0.8066686165545481,
+     "precision_weighted": 0.7739943872778298,
+     "recall_weighted": 0.8422231270358307,
+     "ap": 0.8391701822429376
+    },
+    "controversy": {
+     "n": 141,
+     "positives": 20,
+     "precision": 0.5,
+     "recall": 0.65,
+     "f1": 0.5652173913043479,
+     "f1_weighted": 0.37440247904686097,
+     "precision_weighted": 0.2708516810060786,
+     "recall_weighted": 0.6061387066541706,
+     "ap": 0.46032269629289424
+    },
+    "card": {
+     "n": 141,
+     "positives": 4,
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8,
+     "f1_weighted": 0.5660731021555764,
+     "precision_weighted": 0.39477124183006534,
+     "recall_weighted": 1.0,
+     "ap": 0.5249999999999999
+    },
+    "intensity": {
+     "n": 141,
+     "accuracy": 0.7943262411347518,
+     "mae": 0.2127659574468085,
+     "confusion": {
+      "calm->calm": 44,
+      "calm->building": 6,
+      "calm->peak": 1,
+      "building->calm": 11,
+      "building->building": 33,
+      "building->peak": 9,
+      "peak->building": 2,
+      "peak->peak": 35
+     }
+    }
+   },
+   "event": {
+    "goal": {
+     "events": 6,
+     "caught": 6,
+     "triggers": 6,
+     "true_triggers": 6,
+     "recall": 1.0,
+     "precision": 1.0,
+     "highlight_minutes": 7.4
+    },
+    "big_chance": {
+     "events": 12,
+     "caught": 9,
+     "triggers": 10,
+     "true_triggers": 9,
+     "recall": 0.75,
+     "precision": 0.9,
+     "highlight_minutes": 11.0
+    },
+    "controversy": {
+     "events": 16,
+     "caught": 9,
+     "triggers": 14,
+     "true_triggers": 9,
+     "recall": 0.5625,
+     "precision": 0.6428571428571429,
+     "highlight_minutes": 15.1
+    },
+    "card": {
+     "events": 7,
+     "caught": 5,
+     "triggers": 5,
+     "true_triggers": 5,
+     "recall": 0.7142857142857143,
+     "precision": 1.0,
+     "highlight_minutes": 4.0
+    }
+   }
+  }
+ },
+ "thresholds": {
+  "keyword": {
+   "thresholds": {
+    "goal": 2,
+    "big_chance": 2,
+    "controversy": 2,
+    "card": 2,
+    "intensity": [
+     5,
+     6
+    ]
+   }
+  },
+  "zero-shot": {
+   "tag": "zeroshot-en",
+   "platt": {},
+   "thresholds": {
+    "goal": 0.6584,
+    "big_chance": 0.5995,
+    "controversy": 0.1075,
+    "card": 0.8341
+   },
+   "val_f1": {
+    "goal": 0.2456140350877193,
+    "big_chance": 0.09657320872274143,
+    "controversy": 0.09424083769633507,
+    "card": 0.029850746268656716
+   }
+  },
+  "fine-tuned": {
+   "tag": "ft-v1-cal",
+   "platt": {},
+   "thresholds": {
+    "goal": 0.9808,
+    "big_chance": 0.6964,
+    "controversy": 0.04,
+    "card": 0.9794
+   },
+   "val_f1": {
+    "goal": 0.7272727272727273,
+    "big_chance": 0.4672897196261682,
+    "controversy": 0.574468085106383,
+    "card": 0.5098039215686275
+   }
+  }
+ },
+ "calibration": {
+  "fine-tuned": {
+   "ece_pooled": 0.036526773049645384,
+   "ece_per_question": {
+    "goal": 0.02956453900709218,
+    "big_chance": 0.06143191489361703,
+    "controversy": 0.06847588652482269,
+    "card": 0.026630496453900712
+   },
+   "reliability": [
+    {
+     "bin": [
+      0.0,
+      0.1
+     ],
+     "n": 517,
+     "mean_prob": 0.019708897485493232,
+     "frac_pos": 0.0367504835589942
+    },
+    {
+     "bin": [
+      0.2,
+      0.3
+     ],
+     "n": 1,
+     "mean_prob": 0.218,
+     "frac_pos": 0.0
+    },
+    {
+     "bin": [
+      0.3,
+      0.4
+     ],
+     "n": 1,
+     "mean_prob": 0.3471,
+     "frac_pos": 1.0
+    },
+    {
+     "bin": [
+      0.4,
+      0.5
+     ],
+     "n": 1,
+     "mean_prob": 0.4857,
+     "frac_pos": 0.0
+    },
+    {
+     "bin": [
+      0.5,
+      0.6
+     ],
+     "n": 3,
+     "mean_prob": 0.5841666666666666,
+     "frac_pos": 0.6666666666666666
+    },
+    {
+     "bin": [
+      0.6,
+      0.7
+     ],
+     "n": 2,
+     "mean_prob": 0.61155,
+     "frac_pos": 0.5
+    },
+    {
+     "bin": [
+      0.7,
+      0.8
+     ],
+     "n": 2,
+     "mean_prob": 0.7826,
+     "frac_pos": 1.0
+    },
+    {
+     "bin": [
+      0.8,
+      0.9
+     ],
+     "n": 2,
+     "mean_prob": 0.83985,
+     "frac_pos": 1.0
+    },
+    {
+     "bin": [
+      0.9,
+      1.0
+     ],
+     "n": 35,
+     "mean_prob": 0.9773799999999998,
+     "frac_pos": 0.7142857142857143
+    }
+   ]
+  },
+  "fine-tuned-uncalibrated": {
+   "ece_pooled": 0.05610301418439716,
+   "ece_per_question": {
+    "goal": 0.0425531914893617,
+    "big_chance": 0.08512198581560285,
+    "controversy": 0.07983617021276597,
+    "card": 0.021258156028368794
+   },
+   "reliability": [
+    {
+     "bin": [
+      0.0,
+      0.1
+     ],
+     "n": 519,
+     "mean_prob": 0.00010192678227360307,
+     "frac_pos": 0.038535645472061654
+    },
+    {
+     "bin": [
+      0.4,
+      0.5
+     ],
+     "n": 1,
+     "mean_prob": 0.434,
+     "frac_pos": 0.0
+    },
+    {
+     "bin": [
+      0.8,
+      0.9
+     ],
+     "n": 4,
+     "mean_prob": 0.8418,
+     "frac_pos": 0.75
+    },
+    {
+     "bin": [
+      0.9,
+      1.0
+     ],
+     "n": 40,
+     "mean_prob": 0.9973449999999999,
+     "frac_pos": 0.725
+    }
+   ]
+  }
+ },
+ "latency": [
+  {
+   "gpu": "Tesla T4",
+   "model": "ft-v1",
+   "questions": 5,
+   "n_single": 200,
+   "p50_ms": 31.6,
+   "p90_ms": 34.4,
+   "mean_ms": 31.6,
+   "batched_windows": 1165,
+   "batched_windows_per_s": 46.2
+  },
+  {
+   "gpu": "NVIDIA L4",
+   "model": "ft-v1",
+   "questions": 5,
+   "n_single": 200,
+   "p50_ms": 37.8,
+   "p90_ms": 39.5,
+   "mean_ms": 37.8,
+   "batched_windows": 1165,
+   "batched_windows_per_s": 58.7
+  }
+ ]
+}

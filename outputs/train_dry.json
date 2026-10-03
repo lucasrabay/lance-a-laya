@@ -1,0 +1,16 @@
+{
+ "run": "dry",
+ "data": "datasets/train.jsonl",
+ "limit": 50,
+ "epochs": 1,
+ "max_len": 512,
+ "micro_batch": 8,
+ "seed": 0,
+ "train_s": 25.2,
+ "log_tail": [
+  "Train items: 78 (8 held out) | 1 epochs | 10 steps/epoch",
+  "Epoch 1/1 | avg loss 0.9674",
+  "Fitted temperatures (choice, score, noul): [1.2, 1.0, 1.0]",
+  "Saved checkpoint to /data/ckpt/dry"
+ ]
+}
