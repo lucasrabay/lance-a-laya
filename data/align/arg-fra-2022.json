@@ -1,0 +1,535 @@
+{
+ "match": "arg-fra-2022",
+ "periods": {
+  "1": {
+   "offset": 14678.0,
+   "audio_start": 14678.0,
+   "audio_end": 17832.57,
+   "length_s": 3154.6,
+   "anchors": {
+    "goal": 2,
+    "shot": 6,
+    "corner": 2,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 14662.0
+  },
+  "2": {
+   "offset": 18735.32,
+   "audio_start": 18735.32,
+   "audio_end": 21953.24,
+   "length_s": 3217.9,
+   "anchors": {
+    "goal": 2,
+    "shot": 12,
+    "corner": 5,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 18732.6
+  },
+  "3": {
+   "offset": 22256.74,
+   "audio_start": 22256.74,
+   "audio_end": 23221.39,
+   "length_s": 964.6,
+   "anchors": {
+    "goal": 0,
+    "shot": 5,
+    "corner": 2,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 22253.2
+  },
+  "4": {
+   "offset": 23363.14,
+   "audio_start": 23363.14,
+   "audio_end": 24510.61,
+   "length_s": 1147.5,
+   "anchors": {
+    "goal": 2,
+    "shot": 7,
+    "corner": 2,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 23281.4
+  }
+ },
+ "residuals": [
+  {
+   "period": 1,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": 2.72,
+   "fit_residual": 2.72
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 280.798,
+   "minute": 4,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 456.537,
+   "minute": 7,
+   "loo_residual": 1.18,
+   "fit_residual": 1.18
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 502.688,
+   "minute": 8,
+   "loo_residual": -19.58,
+   "fit_residual": -19.33
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 975.886,
+   "minute": 16,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1344.114,
+   "minute": 22,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 1344.114,
+   "minute": 22,
+   "loo_residual": -0.18,
+   "fit_residual": 0.07
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 1742.137,
+   "minute": 29,
+   "loo_residual": -13.01,
+   "fit_residual": -12.76
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1895.181,
+   "minute": 31,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2122.647,
+   "minute": 35,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 2122.647,
+   "minute": 35,
+   "loo_residual": 0.17,
+   "fit_residual": 0.17
+  },
+  {
+   "period": 1,
+   "kind": "period_end",
+   "t": 3154.569,
+   "minute": null,
+   "loo_residual": -0.76,
+   "fit_residual": -0.51
+  },
+  {
+   "period": 2,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": 1.9,
+   "fit_residual": 0.9
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 229.971,
+   "minute": 48,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 364.83,
+   "minute": 51,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 465.739,
+   "minute": 52,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 801.38,
+   "minute": 58,
+   "loo_residual": -1.63,
+   "fit_residual": -0.88
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 891.755,
+   "minute": 59,
+   "loo_residual": -0.82,
+   "fit_residual": -0.07
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 1333.571,
+   "minute": 67,
+   "loo_residual": -8.24,
+   "fit_residual": -7.49
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1335.084,
+   "minute": 67,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1509.207,
+   "minute": 70,
+   "loo_residual": -1.9,
+   "fit_residual": -1.15
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1591.216,
+   "minute": 71,
+   "loo_residual": 6.67,
+   "fit_residual": 6.67
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2064.975,
+   "minute": 79,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 2064.975,
+   "minute": 79,
+   "loo_residual": -1.9,
+   "fit_residual": -1.15
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2159.025,
+   "minute": 80,
+   "loo_residual": -4.07,
+   "fit_residual": -3.32
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 2159.025,
+   "minute": 80,
+   "loo_residual": 1.74,
+   "fit_residual": 0.74
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2303.69,
+   "minute": 83,
+   "loo_residual": 7.45,
+   "fit_residual": 7.45
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2877.862,
+   "minute": 92,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 2909.428,
+   "minute": 93,
+   "loo_residual": 3.01,
+   "fit_residual": 3.01
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2925.484,
+   "minute": 93,
+   "loo_residual": 2.88,
+   "fit_residual": 2.88
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 3097.226,
+   "minute": 96,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 3149.158,
+   "minute": 97,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "period_end",
+   "t": 3217.921,
+   "minute": null,
+   "loo_residual": -6.49,
+   "fit_residual": -5.74
+  },
+  {
+   "period": 3,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": -35.92,
+   "fit_residual": 0.08
+  },
+  {
+   "period": 3,
+   "kind": "shot",
+   "t": 125.384,
+   "minute": 92,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 3,
+   "kind": "shot",
+   "t": 594.465,
+   "minute": 99,
+   "loo_residual": 0.28,
+   "fit_residual": 0.28
+  },
+  {
+   "period": 3,
+   "kind": "corner",
+   "t": 620.265,
+   "minute": 100,
+   "loo_residual": -8.76,
+   "fit_residual": -8.76
+  },
+  {
+   "period": 3,
+   "kind": "shot",
+   "t": 868.023,
+   "minute": 104,
+   "loo_residual": -0.12,
+   "fit_residual": -0.12
+  },
+  {
+   "period": 3,
+   "kind": "shot",
+   "t": 870.401,
+   "minute": 104,
+   "loo_residual": -2.5,
+   "fit_residual": -2.5
+  },
+  {
+   "period": 3,
+   "kind": "corner",
+   "t": 911.3,
+   "minute": 105,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 3,
+   "kind": "shot",
+   "t": 941.223,
+   "minute": 105,
+   "loo_residual": -0.24,
+   "fit_residual": -0.24
+  },
+  {
+   "period": 3,
+   "kind": "period_end",
+   "t": 964.648,
+   "minute": null,
+   "loo_residual": 36.03,
+   "fit_residual": 36.03
+  },
+  {
+   "period": 4,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": 4.41,
+   "fit_residual": 0.16
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 115.723,
+   "minute": 106,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 177.018,
+   "minute": 107,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 178.079,
+   "minute": 107,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "goal",
+   "t": 178.079,
+   "minute": 107,
+   "loo_residual": 5.28,
+   "fit_residual": 0.78
+  },
+  {
+   "period": 4,
+   "kind": "corner",
+   "t": 635.007,
+   "minute": 115,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 638.948,
+   "minute": 115,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 725.189,
+   "minute": 117,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "goal",
+   "t": 725.189,
+   "minute": 117,
+   "loo_residual": -4.7,
+   "fit_residual": -4.45
+  },
+  {
+   "period": 4,
+   "kind": "corner",
+   "t": 845.829,
+   "minute": 119,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 1064.376,
+   "minute": 122,
+   "loo_residual": -6.05,
+   "fit_residual": -6.05
+  },
+  {
+   "period": 4,
+   "kind": "shot",
+   "t": 1079.834,
+   "minute": 122,
+   "loo_residual": -2.95,
+   "fit_residual": -2.95
+  },
+  {
+   "period": 4,
+   "kind": "period_end",
+   "t": 1147.472,
+   "minute": null,
+   "loo_residual": null,
+   "fit_residual": null
+  }
+ ],
+ "summary": {
+  "goal": {
+   "n": 6,
+   "found": 6,
+   "median_abs": 1.8,
+   "max_abs": 5.3
+  },
+  "shot": {
+   "n": 30,
+   "found": 14,
+   "median_abs": 2.2,
+   "max_abs": 7.5
+  },
+  "corner": {
+   "n": 11,
+   "found": 5,
+   "median_abs": 8.8,
+   "max_abs": 19.6
+  },
+  "period_start": {
+   "n": 4,
+   "found": 4,
+   "median_abs": 3.6,
+   "max_abs": 35.9
+  },
+  "period_end": {
+   "n": 4,
+   "found": 3,
+   "median_abs": 6.5,
+   "max_abs": 36.0
+  }
+ }
+}

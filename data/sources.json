@@ -1,0 +1,182 @@
+[
+ {
+  "match": "bra-kor-2022",
+  "split": "train",
+  "youtube": "ipb1eF0JsIU",
+  "title": "JOGO COMPLETO: BRASIL X CORÉIA DO SUL | OITAVAS DE FINAL | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 21074,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 127.1,
+  "kickoff_hint_s": 4511,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.1,
+   351.2
+  ],
+  "coverage_whole": 1.003
+ },
+ {
+  "match": "cmr-bra-2022",
+  "split": "train",
+  "youtube": "QEjodCqUCUs",
+  "title": "JOGO COMPLETO: BRASIL X CAMARÕES | RODADA 3 | FASE DE GRUPOS | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 20505,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 125.5,
+  "kickoff_hint_s": 3626,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.1,
+   341.8
+  ],
+  "coverage_whole": 1.0
+ },
+ {
+  "match": "cro-bra-2022",
+  "split": "train",
+  "youtube": "88jWB1TBw0s",
+  "title": "JOGO COMPLETO: BRASIL X CROÁCIA | QUARTAS DE FINAL | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 17155,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 100.7,
+  "kickoff_hint_s": 5510,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   2.4,
+   285.9
+  ],
+  "coverage_whole": 0.996
+ },
+ {
+  "match": "por-sui-2022",
+  "split": "train",
+  "youtube": "h2BQc3BPq1I",
+  "title": "JOGO COMPLETO: PORTUGAL X SUÍÇA | OITAVAS DE FINAL | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 20275,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 123.0,
+  "kickoff_hint_s": 3702,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.0,
+   337.9
+  ],
+  "coverage_whole": 1.003
+ },
+ {
+  "match": "bra-srb-2022",
+  "split": "train",
+  "youtube": "0Nvt0NzTMfA",
+  "title": "JOGO COMPLETO: BRASIL X SÉRVIA | RODADA 1 | FASE DE GRUPOS | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 28110,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 170.1,
+  "kickoff_hint_s": 3687,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.0,
+   468.4
+  ],
+  "coverage_whole": 1.002
+ },
+ {
+  "match": "par-bra-2024",
+  "split": "train",
+  "youtube": "Ki-Z43zQi0Q",
+  "title": "PARAGUAI 1 x 4 BRASIL - Copa América - 2º rodada - 28/06/2024 - AO VIVO",
+  "channel": "Tupi Esportes",
+  "duration_s": 9640,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 58.8,
+  "kickoff_hint_s": 2397,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.0,
+   160.7
+  ],
+  "coverage_whole": 1.006
+ },
+ {
+  "match": "uru-bra-2024",
+  "split": "train",
+  "youtube": "4-8zuPRvoRM",
+  "title": "🔴 Uruguai x Brasil - Copa América - 06/07/2024 - Ulisses Costa e Alexandre Praetzel",
+  "channel": "Rádio Bandeirantes",
+  "duration_s": 11195,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 68.3,
+  "kickoff_hint_s": 126,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.0,
+   184.8
+  ],
+  "coverage_whole": 0.995
+ },
+ {
+  "match": "bra-sui-2022",
+  "split": "val",
+  "youtube": "Bju2Zb4nx8U",
+  "title": "JOGO COMPLETO: BRASIL X SUÍÇA | RODADA 2 | FASE DE GRUPOS | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 14061,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 85.0,
+  "kickoff_hint_s": 3465,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.1,
+   234.4
+  ],
+  "coverage_whole": 1.0
+ },
+ {
+  "match": "eng-fra-2022",
+  "split": "val",
+  "youtube": "swL8pmpCXQY",
+  "title": "JOGO COMPLETO: INGLATERRA X FRANÇA | QUARTAS DE FINAL | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 19591,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 116.7,
+  "kickoff_hint_s": 5572,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.0,
+   326.5
+  ],
+  "coverage_whole": 1.003
+ },
+ {
+  "match": "arg-fra-2022",
+  "split": "test",
+  "youtube": "etHcWGAroew",
+  "title": "JOGO COMPLETO: ARGENTINA X FRANÇA | FINAL | COPA DO MUNDO 2022",
+  "channel": "CazéTV",
+  "duration_s": 28824,
+  "live_status": "was_live",
+  "availability": "public",
+  "audio_low_mb": 173.9,
+  "kickoff_hint_s": 14662,
+  "coverage_match_window": 1.0,
+  "longest_speech_block_min": [
+   0.2,
+   480.4
+  ],
+  "coverage_whole": 0.998
+ }
+]

@@ -1,0 +1,371 @@
+{
+ "match": "eng-fra-2022",
+ "periods": {
+  "1": {
+   "offset": 5587.75,
+   "audio_start": 5587.75,
+   "audio_end": 8580.78,
+   "length_s": 2993.0,
+   "anchors": {
+    "goal": 1,
+    "shot": 8,
+    "corner": 3,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 5572.0
+  },
+  "2": {
+   "offset": 9484.53,
+   "audio_start": 9484.53,
+   "audio_end": 12814.48,
+   "length_s": 3329.9,
+   "anchors": {
+    "goal": 2,
+    "shot": 16,
+    "corner": 4,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 9480.8
+  }
+ },
+ "residuals": [
+  {
+   "period": 1,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": 0.99,
+   "fit_residual": 0.49
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 197.247,
+   "minute": 3,
+   "loo_residual": -0.48,
+   "fit_residual": -0.48
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 592.277,
+   "minute": 9,
+   "loo_residual": -33.51,
+   "fit_residual": -33.51
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 635.259,
+   "minute": 10,
+   "loo_residual": 0.85,
+   "fit_residual": 0.85
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 982.902,
+   "minute": 16,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 982.902,
+   "minute": 16,
+   "loo_residual": null,
+   "fit_residual": 0.07
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1208.041,
+   "minute": 20,
+   "loo_residual": 1.57,
+   "fit_residual": 1.57
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1289.756,
+   "minute": 21,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1293.745,
+   "minute": 21,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1710.499,
+   "minute": 28,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 1759.897,
+   "minute": 29,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2325.724,
+   "minute": 38,
+   "loo_residual": 1.05,
+   "fit_residual": 1.05
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 2910.253,
+   "minute": 48,
+   "loo_residual": -23.5,
+   "fit_residual": -23.5
+  },
+  {
+   "period": 1,
+   "kind": "period_end",
+   "t": 2993.033,
+   "minute": null,
+   "loo_residual": -36.73,
+   "fit_residual": -35.98
+  },
+  {
+   "period": 2,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": 1.55,
+   "fit_residual": 1.55
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 91.961,
+   "minute": 46,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 96.676,
+   "minute": 46,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 130.944,
+   "minute": 47,
+   "loo_residual": 5.92,
+   "fit_residual": 5.92
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 133.274,
+   "minute": 47,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 361.219,
+   "minute": 51,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 507.652,
+   "minute": 53,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 507.652,
+   "minute": 53,
+   "loo_residual": 0.23,
+   "fit_residual": -0.02
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 584.502,
+   "minute": 54,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 875.823,
+   "minute": 59,
+   "loo_residual": -0.08,
+   "fit_residual": -0.08
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 908.598,
+   "minute": 60,
+   "loo_residual": -0.17,
+   "fit_residual": -0.17
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 966.46,
+   "minute": 61,
+   "loo_residual": -0.15,
+   "fit_residual": -0.15
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1463.113,
+   "minute": 69,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1531.802,
+   "minute": 70,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1793.038,
+   "minute": 74,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1883.496,
+   "minute": 76,
+   "loo_residual": 11.91,
+   "fit_residual": 11.91
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 1918.283,
+   "minute": 76,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1930.083,
+   "minute": 77,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 1930.083,
+   "minute": 77,
+   "loo_residual": -0.18,
+   "fit_residual": -0.18
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2315.298,
+   "minute": 83,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2580.335,
+   "minute": 88,
+   "loo_residual": -8.59,
+   "fit_residual": -8.59
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 2822.32,
+   "minute": 92,
+   "loo_residual": -16.03,
+   "fit_residual": -16.03
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 3305.738,
+   "minute": 100,
+   "loo_residual": 4.09,
+   "fit_residual": 4.09
+  },
+  {
+   "period": 2,
+   "kind": "period_end",
+   "t": 3329.949,
+   "minute": null,
+   "loo_residual": -3.12,
+   "fit_residual": -3.12
+  }
+ ],
+ "summary": {
+  "goal": {
+   "n": 3,
+   "found": 2,
+   "median_abs": 0.2,
+   "max_abs": 0.2
+  },
+  "shot": {
+   "n": 24,
+   "found": 10,
+   "median_abs": 0.9,
+   "max_abs": 11.9
+  },
+  "corner": {
+   "n": 7,
+   "found": 4,
+   "median_abs": 19.8,
+   "max_abs": 33.5
+  },
+  "period_start": {
+   "n": 2,
+   "found": 2,
+   "median_abs": 1.3,
+   "max_abs": 1.6
+  },
+  "period_end": {
+   "n": 2,
+   "found": 2,
+   "median_abs": 19.9,
+   "max_abs": 36.7
+  }
+ }
+}

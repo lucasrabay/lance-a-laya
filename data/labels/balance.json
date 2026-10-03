@@ -1,0 +1,89 @@
+{
+ "train": {
+  "windows": 8707,
+  "goal": {
+   "pos": 126,
+   "neg": 8431,
+   "ignore": 150
+  },
+  "big_chance": {
+   "pos": 225,
+   "neg": 7877,
+   "ignore": 605
+  },
+  "controversy": {
+   "pos": 236,
+   "neg": 8012,
+   "ignore": 459
+  },
+  "card": {
+   "pos": 111,
+   "neg": 8277,
+   "ignore": 319
+  },
+  "intensity": {
+   "calm": 4939,
+   "building": 2488,
+   "peak": 814,
+   "ignore": 466
+  }
+ },
+ "val": {
+  "windows": 2430,
+  "goal": {
+   "pos": 22,
+   "neg": 2381,
+   "ignore": 27
+  },
+  "big_chance": {
+   "pos": 59,
+   "neg": 2215,
+   "ignore": 156
+  },
+  "controversy": {
+   "pos": 108,
+   "neg": 2144,
+   "ignore": 178
+  },
+  "card": {
+   "pos": 16,
+   "neg": 2333,
+   "ignore": 81
+  },
+  "intensity": {
+   "calm": 1192,
+   "building": 966,
+   "peak": 191,
+   "ignore": 81
+  }
+ },
+ "test": {
+  "windows": 1698,
+  "goal": {
+   "pos": 35,
+   "neg": 1616,
+   "ignore": 47
+  },
+  "big_chance": {
+   "pos": 47,
+   "neg": 1570,
+   "ignore": 81
+  },
+  "controversy": {
+   "pos": 75,
+   "neg": 1501,
+   "ignore": 122
+  },
+  "card": {
+   "pos": 14,
+   "neg": 1580,
+   "ignore": 104
+  },
+  "intensity": {
+   "calm": 889,
+   "building": 514,
+   "peak": 221,
+   "ignore": 74
+  }
+ }
+}

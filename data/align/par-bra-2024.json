@@ -1,0 +1,475 @@
+{
+ "match": "par-bra-2024",
+ "periods": {
+  "1": {
+   "offset": 2440.25,
+   "audio_start": 2440.25,
+   "audio_end": 5483.03,
+   "length_s": 3042.8,
+   "anchors": {
+    "goal": 3,
+    "shot": 19,
+    "corner": 6,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 2397.0
+  },
+  "2": {
+   "offset": 6413.03,
+   "audio_start": 6413.03,
+   "audio_end": 9293.62,
+   "length_s": 2880.6,
+   "anchors": {
+    "goal": 2,
+    "shot": 13,
+    "corner": 4,
+    "period_start": 1,
+    "period_end": 1
+   },
+   "search_center": 6383.0
+  }
+ },
+ "residuals": [
+  {
+   "period": 1,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": -0.91,
+   "fit_residual": -0.91
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 79.203,
+   "minute": 1,
+   "loo_residual": -0.65,
+   "fit_residual": -0.65
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 113.875,
+   "minute": 1,
+   "loo_residual": 3.2,
+   "fit_residual": 2.95
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 320.094,
+   "minute": 5,
+   "loo_residual": -0.68,
+   "fit_residual": -0.68
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 489.754,
+   "minute": 8,
+   "loo_residual": -5.36,
+   "fit_residual": -5.36
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 492.15,
+   "minute": 8,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 863.21,
+   "minute": 14,
+   "loo_residual": 0.45,
+   "fit_residual": 0.2
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 905.374,
+   "minute": 15,
+   "loo_residual": -2.56,
+   "fit_residual": -2.56
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 966.36,
+   "minute": 16,
+   "loo_residual": 0.62,
+   "fit_residual": 0.37
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 1076.153,
+   "minute": 17,
+   "loo_residual": 3.29,
+   "fit_residual": 3.04
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1077.846,
+   "minute": 17,
+   "loo_residual": 0.35,
+   "fit_residual": 0.1
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1114.751,
+   "minute": 18,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 1339.944,
+   "minute": 22,
+   "loo_residual": -3.01,
+   "fit_residual": -3.01
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1341.415,
+   "minute": 22,
+   "loo_residual": 2.97,
+   "fit_residual": 2.72
+  },
+  {
+   "period": 1,
+   "kind": "corner",
+   "t": 1653.043,
+   "minute": 27,
+   "loo_residual": -5.03,
+   "fit_residual": -5.03
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1729.377,
+   "minute": 28,
+   "loo_residual": -0.13,
+   "fit_residual": -0.13
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1747.363,
+   "minute": 29,
+   "loo_residual": -1.27,
+   "fit_residual": -1.27
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 1857.305,
+   "minute": 30,
+   "loo_residual": -0.68,
+   "fit_residual": -0.68
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2081.208,
+   "minute": 34,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 2081.208,
+   "minute": 34,
+   "loo_residual": -0.58,
+   "fit_residual": -0.58
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2367.398,
+   "minute": 39,
+   "loo_residual": 0.88,
+   "fit_residual": 0.63
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2367.891,
+   "minute": 39,
+   "loo_residual": 0.39,
+   "fit_residual": 0.14
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2525.945,
+   "minute": 42,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2550.629,
+   "minute": 42,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2552.437,
+   "minute": 42,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 2552.437,
+   "minute": 42,
+   "loo_residual": 3.55,
+   "fit_residual": 3.05
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2679.528,
+   "minute": 44,
+   "loo_residual": 5.95,
+   "fit_residual": 5.7
+  },
+  {
+   "period": 1,
+   "kind": "shot",
+   "t": 2968.512,
+   "minute": 49,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 1,
+   "kind": "goal",
+   "t": 2968.512,
+   "minute": 49,
+   "loo_residual": 0.52,
+   "fit_residual": 0.02
+  },
+  {
+   "period": 1,
+   "kind": "period_end",
+   "t": 3042.778,
+   "minute": null,
+   "loo_residual": -3.33,
+   "fit_residual": -3.33
+  },
+  {
+   "period": 2,
+   "kind": "period_start",
+   "t": 0.0,
+   "minute": null,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 141.318,
+   "minute": 47,
+   "loo_residual": 0.2,
+   "fit_residual": -0.05
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 166.354,
+   "minute": 47,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 166.354,
+   "minute": 47,
+   "loo_residual": 1.63,
+   "fit_residual": 0.38
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 310.136,
+   "minute": 50,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 338.15,
+   "minute": 50,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 541.609,
+   "minute": 54,
+   "loo_residual": -1.16,
+   "fit_residual": -1.16
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 607.591,
+   "minute": 55,
+   "loo_residual": 0.19,
+   "fit_residual": -0.06
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 791.707,
+   "minute": 58,
+   "loo_residual": 4.83,
+   "fit_residual": 4.58
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1041.972,
+   "minute": 62,
+   "loo_residual": -1.12,
+   "fit_residual": -1.12
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1184.718,
+   "minute": 64,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "goal",
+   "t": 1184.718,
+   "minute": 64,
+   "loo_residual": -1.5,
+   "fit_residual": -1.25
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1296.554,
+   "minute": 66,
+   "loo_residual": -0.56,
+   "fit_residual": -0.56
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1377.516,
+   "minute": 67,
+   "loo_residual": null,
+   "fit_residual": null
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 1408.721,
+   "minute": 68,
+   "loo_residual": 4.18,
+   "fit_residual": 3.93
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1539.178,
+   "minute": 70,
+   "loo_residual": -0.09,
+   "fit_residual": -0.09
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 1676.825,
+   "minute": 72,
+   "loo_residual": 5.62,
+   "fit_residual": 5.37
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2349.967,
+   "minute": 84,
+   "loo_residual": 1.31,
+   "fit_residual": 1.06
+  },
+  {
+   "period": 2,
+   "kind": "corner",
+   "t": 2705.251,
+   "minute": 90,
+   "loo_residual": -3.24,
+   "fit_residual": -3.24
+  },
+  {
+   "period": 2,
+   "kind": "shot",
+   "t": 2710.812,
+   "minute": 90,
+   "loo_residual": -7.02,
+   "fit_residual": -7.02
+  },
+  {
+   "period": 2,
+   "kind": "period_end",
+   "t": 2880.59,
+   "minute": null,
+   "loo_residual": null,
+   "fit_residual": null
+  }
+ ],
+ "summary": {
+  "goal": {
+   "n": 5,
+   "found": 5,
+   "median_abs": 1.5,
+   "max_abs": 3.5
+  },
+  "shot": {
+   "n": 32,
+   "found": 21,
+   "median_abs": 0.7,
+   "max_abs": 7.0
+  },
+  "corner": {
+   "n": 10,
+   "found": 9,
+   "median_abs": 3.3,
+   "max_abs": 5.4
+  },
+  "period_start": {
+   "n": 2,
+   "found": 1,
+   "median_abs": 0.9,
+   "max_abs": 0.9
+  },
+  "period_end": {
+   "n": 2,
+   "found": 1,
+   "median_abs": 3.3,
+   "max_abs": 3.3
+  }
+ }
+}
