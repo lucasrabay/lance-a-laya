@@ -1,0 +1,29 @@
+[project]
+name = "lance-a-laya"
+version = "0.1.0"
+description = "Real-time football highlights from PT-BR narration with fine-tuned Laya decision models"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "modal>=1.0",
+    "yt-dlp[default]",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "pyyaml",
+    "requests",
+    "imageio-ffmpeg>=0.6.0",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lal"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

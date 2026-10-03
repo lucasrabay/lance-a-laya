@@ -1,0 +1,22 @@
+# Pipeline parameters. Every tolerance used for labels and metrics lives here and is documented in README.
+windows:
+  length_s: 20        # window length
+  stride_s: 5         # hop between window starts
+  margin_s: 10        # include this much before kickoff / after the end of each period
+
+labels:
+  # Event span relative to the StatsBomb event time t (seconds, audio-aligned):
+  goal_span: [-3, 12]
+  big_chance_span: [-3, 8]
+  big_chance_min_xg: 0.3          # non-goal shots with xG >= this (or hitting the post) seed big_chance
+  card_search: [0, 120]           # the card is announced after the foul; the teacher pinpoints it here
+  card_fallback_span: [5, 45]     # used when the teacher finds no card call in card_search
+  penalty_span: [-3, 30]          # penalty fouls seed controversy
+  min_overlap_s: 3                # window is positive if it overlaps a span by >= this
+  ignore_near_s: 10               # windows within this distance of a span (but < min_overlap) are ignored
+
+events:
+  match_tolerance_s: 30           # event-level metric: a trigger within +-N s of an event catches it
+  merge_gap_s: 30                 # positive windows closer than this merge into one trigger
+  max_trigger_s: 120              # ...but a highlight is at most 2 min; longer runs split (added after the first
+                                  # eval: zero-shot fired on nearly every window and merged into match-long triggers)

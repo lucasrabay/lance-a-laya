@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Labeling</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1d1d1b; --muted: #77756f; --line: #e2e0da;
+    --accent: #1f6feb; --on: #0f7b3e; --on-bg: #e3f4ea; --warn: #b54708; --warn-bg: #fdf0e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141413; --panel: #1e1e1c; --ink: #ecebe6; --muted: #9a988f; --line: #33322e;
+            --accent: #6ea8fe; --on: #5fd38d; --on-bg: #1d3427; --warn: #f5a35c; --warn-bg: #3a2a1a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  h1 { font-size: 18px; margin: 0; }
+  .progress { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .bar { height: 4px; background: var(--line); border-radius: 2px; margin: 10px 0 20px; overflow: hidden; }
+  .bar > div { height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
+  .prev { color: var(--muted); font-size: 14px; margin-bottom: 12px; border-left: 3px solid var(--line); padding-left: 10px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+  .text { font-size: 21px; line-height: 1.55; min-height: 4.5em; }
+  .controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin-top: 16px; }
+  .opt { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; cursor: pointer; user-select: none;
+         display: flex; justify-content: space-between; align-items: center; background: var(--panel); }
+  .opt.on { border-color: var(--on); background: var(--on-bg); color: var(--on); font-weight: 600; }
+  .opt.unsure.on { border-color: var(--warn); background: var(--warn-bg); color: var(--warn); }
+  kbd { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; border: 1px solid var(--line); border-bottom-width: 2px;
+        border-radius: 4px; padding: 1px 6px; color: var(--muted); background: var(--bg); }
+  .row { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; align-items: center; }
+  button { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 8px;
+           padding: 8px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .msg { color: var(--warn); min-height: 1.5em; margin-top: 8px; font-size: 14px; }
+  .saved { color: var(--on); font-size: 14px; }
+  details { margin-top: 22px; color: var(--muted); font-size: 14px; }
+  details dt { font-weight: 600; color: var(--ink); margin-top: 8px; }
+  details dd { margin: 2px 0 0; }
+  .keys { color: var(--muted); font-size: 13px; margin-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">Gold labeling</h1>
+    <span class="progress" id="progress"></span>
+  </header>
+  <div class="bar"><div id="bar"></div></div>
+
+  <div class="card">
+    <div class="prev" id="prev"></div>
+    <div class="meta" id="meta"></div>
+    <div class="text" id="text">Loading…</div>
+    <div class="controls" id="controls"></div>
+    <div class="row">
+      <button id="play" type="button">▶ Audio <kbd>A</kbd></button>
+      <button id="back" type="button">← Back <kbd>⌫</kbd></button>
+      <button id="skip" type="button">Skip <kbd>→</kbd></button>
+      <button id="save" class="primary" type="button">Save &amp; next <kbd>Enter</kbd></button>
+      <span class="saved" id="saved"></span>
+    </div>
+    <div class="msg" id="msg"></div>
+  </div>
+
+  <div class="keys" id="keys"></div>
+  <details id="guide"><summary>Labeling guide <kbd>?</kbd></summary><dl id="guideList"></dl></details>
+  <audio id="audio" preload="none"></audio>
+</main>
+<script>
+const NOULS = [["goal", "g", "Goal (live)"], ["big_chance", "b", "Big chance (no goal)"],
+               ["controversy", "c", "Controversy"], ["card", "k", "Card shown"]];
+const LEVELS = [["1", "calm"], ["2", "building"], ["3", "peak"]];
+let cfg = {}, items = [], labels = {}, i = 0, cur = null;
+
+const $ = (id) => document.getElementById(id);
+
+function blank() {
+  if (cfg.review) return { verdict: null, unsure: false };
+  return { goal: 0, big_chance: 0, controversy: 0, card: 0, intensity: null, unsure: false };
+}
+
+function render() {
+  const it = items[i];
+  const done = Object.keys(labels).length;
+  $("progress").textContent = `${i + 1} / ${items.length}  ·  ${done} saved`;
+  $("bar").style.width = `${(100 * done) / Math.max(1, items.length)}%`;
+  if (!it) { $("text").textContent = "All done — thank you! You can close this tab."; $("controls").innerHTML = ""; return; }
+  const saved = labels[it.idx];
+  cur = saved ? JSON.parse(JSON.stringify(saved.labels)) : blank();
+  $("prev").textContent = it.prev_text ? "…" + it.prev_text : "";
+  $("prev").style.display = it.prev_text ? "" : "none";
+  $("meta").textContent = cfg.review ? `Candidate: ${it.question}${it.clock ? "  ·  " + it.clock : ""}` : "";
+  $("text").textContent = it.text || "(no speech in this window)";
+  $("saved").textContent = saved ? "✓ saved" : "";
+  $("play").style.display = it.audio ? "" : "none";
+  $("msg").textContent = "";
+  const audio = $("audio"); audio.pause(); audio.removeAttribute("src");
+  drawControls();
+}
+
+function opt(label, key, on, cls, onclick) {
+  const d = document.createElement("div");
+  d.className = "opt" + (on ? " on" : "") + (cls ? " " + cls : "");
+  d.innerHTML = `<span>${label}</span><kbd>${key}</kbd>`;
+  d.onclick = onclick;
+  return d;
+}
+
+function drawControls() {
+  const c = $("controls"); c.innerHTML = "";
+  if (cfg.review) {
+    c.append(opt("Yes, real moment", "Y", cur.verdict === "yes", "", () => { cur.verdict = "yes"; drawControls(); }));
+    c.append(opt("No", "N", cur.verdict === "no", "", () => { cur.verdict = "no"; drawControls(); }));
+  } else {
+    for (const [q, k, name] of NOULS) c.append(opt(name, k.toUpperCase(), cur[q] === 1, "", () => { cur[q] = 1 - cur[q]; drawControls(); }));
+    for (const [k, lv] of LEVELS) c.append(opt(`Intensity: ${lv}`, k, cur.intensity === Number(k) - 1, "", () => { cur.intensity = Number(k) - 1; drawControls(); }));
+  }
+  c.append(opt("Unsure", "U", cur.unsure, "unsure", () => { cur.unsure = !cur.unsure; drawControls(); }));
+}
+
+async function save() {
+  const it = items[i]; if (!it) return;
+  if (!cfg.review && cur.intensity === null) { $("msg").textContent = "Pick an intensity (1 / 2 / 3) before saving."; return; }
+  if (cfg.review && cur.verdict === null) { $("msg").textContent = "Pick Y or N before saving."; return; }
+  const rec = { idx: it.idx, wid: it.wid, labels: cur, ts: new Date().toISOString() };
+  const r = await fetch("/api/label", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(rec) });
+  if (!r.ok) { $("msg").textContent = "Save failed — is the server still running?"; return; }
+  labels[it.idx] = rec;
+  i = Math.min(i + 1, items.length);
+  render();
+}
+
+function play() {
+  const it = items[i]; if (!it || !it.audio) return;
+  const a = $("audio");
+  if (!a.getAttribute("src")) a.src = `/audio/${it.idx}.m4a`;
+  a.paused ? a.play() : a.pause();
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === "enter") { e.preventDefault(); save(); return; }
+  if (k === "backspace" || k === "arrowleft") { e.preventDefault(); i = Math.max(0, i - 1); render(); return; }
+  if (k === "arrowright") { i = Math.min(items.length, i + 1); render(); return; }
+  if (k === "?") { $("guide").open = !$("guide").open; return; }
+  if (k === "a") { play(); return; }
+  if (!items[i]) return;
+  if (k === "u") cur.unsure = !cur.unsure;
+  else if (cfg.review && (k === "y" || k === "n")) cur.verdict = k === "y" ? "yes" : "no";
+  else if (!cfg.review) {
+    const n = NOULS.find(([, key]) => key === k); if (n) cur[n[0]] = 1 - cur[n[0]];
+    const l = LEVELS.find(([key]) => key === k); if (l) cur.intensity = Number(k) - 1;
+  }
+  drawControls();
+});
+$("save").onclick = save;
+$("back").onclick = () => { i = Math.max(0, i - 1); render(); };
+$("skip").onclick = () => { i = Math.min(items.length, i + 1); render(); };
+$("play").onclick = play;
+
+(async () => {
+  cfg = await (await fetch("/api/config")).json();
+  items = await (await fetch("/api/items")).json();
+  labels = await (await fetch("/api/labels")).json();
+  $("title").textContent = cfg.review ? "Trigger review" : "Gold labeling";
+  $("keys").innerHTML = cfg.review
+    ? "Is this a real moment of the named kind, live in this narration? <kbd>Y</kbd>/<kbd>N</kbd>, <kbd>U</kbd> unsure, <kbd>Enter</kbd> save."
+    : "Toggle <kbd>G</kbd> goal · <kbd>B</kbd> big chance · <kbd>C</kbd> controversy · <kbd>K</kbd> card, set intensity <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>, <kbd>U</kbd> unsure, <kbd>Enter</kbd> save. Judge what happens live in this 20-second window; the grey text above is the previous 20 s, for context only.";
+  const dl = $("guideList");
+  for (const [q, g] of Object.entries(cfg.guide)) { dl.insertAdjacentHTML("beforeend", `<dt>${q}</dt><dd></dd>`); dl.lastElementChild.textContent = g; }
+  i = items.findIndex((it) => !(it.idx in labels)); if (i < 0) i = items.length;
+  render();
+})();
+</script>
+</body>
+</html>

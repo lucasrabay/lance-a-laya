@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- lance-a-laya: keep copyrighted broadcast media and transcripts out of git ----
+data/raw/
+data/interim/
+data/audio/
+data/transcripts/
+data/captions/
+data/gold/snippets/
+outputs/clips/
+*.opus
+*.m4a
+*.webm
+*.mp4
+*.wav
+*.mp3
+*.part
+.DS_Store
+data/datasets/
+data/gold/audio/
+data/gold/sample.jsonl
+data/gold/review_items.jsonl

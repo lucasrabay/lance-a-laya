@@ -1,0 +1,140 @@
+# Match registry. Split is by match and frozen once Phase 1 starts; the test match is never inspected
+# during development. `youtube` is the PT-BR narration source; `alt` lists fallbacks for the same match.
+# kickoff_utc: scheduled kickoff from the official FIFA / CONMEBOL schedule (StatsBomb `kick_off` mixes
+# time zones: WC22 group stage and CA24 are UTC, WC22 knockouts UTC+2). Only used for a seek hint;
+# alignment finds the real kickoff in the narration. Event data: StatsBomb open data (https://github.com/statsbomb/open-data).
+
+matches:
+  - id: bra-kor-2022
+    statsbomb_id: 3869253
+    kickoff_utc: "2022-12-05T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: ipb1eF0JsIU
+    source: cazetv
+    kind: tv
+    split: train
+    alt: [GnrHR4-DZF0]  # Transamérica radio
+
+  - id: cmr-bra-2022
+    statsbomb_id: 3857280
+    kickoff_utc: "2022-12-02T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: QEjodCqUCUs
+    source: cazetv
+    kind: tv
+    split: train
+    alt: [_BwWPUTGg7w]  # Transamérica radio
+
+  - id: cro-bra-2022
+    statsbomb_id: 3869420
+    kickoff_utc: "2022-12-09T15:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: 88jWB1TBw0s
+    source: cazetv
+    kind: tv
+    split: train
+    alt: [U-HEAKjv79I, zTRSM1_2xXs]  # Bandeirantes, Transamérica
+
+  - id: por-sui-2022
+    statsbomb_id: 3869254
+    kickoff_utc: "2022-12-06T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: h2BQc3BPq1I
+    source: cazetv
+    kind: tv
+    split: train
+    alt: []
+
+  - id: bra-srb-2022
+    statsbomb_id: 3857258
+    kickoff_utc: "2022-11-24T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: 0Nvt0NzTMfA
+    source: cazetv
+    kind: tv
+    split: train
+    alt: [w1SAfXCUsS4, JMkvUte6OuM]  # Bandeirantes, BandNews
+
+  - id: par-bra-2024
+    statsbomb_id: 3939983
+    kickoff_utc: "2024-06-29T01:00:00Z"
+    competition: Copa America 2024
+    youtube: Ki-Z43zQi0Q
+    source: radio-tupi
+    kind: radio
+    split: train
+    alt: [z8P0_Qxxa9Y]  # Bandeirantes
+
+  - id: uru-bra-2024
+    statsbomb_id: 3942415
+    kickoff_utc: "2024-07-07T01:00:00Z"
+    competition: Copa America 2024
+    youtube: 4-8zuPRvoRM
+    source: radio-bandeirantes
+    kind: radio
+    split: train
+    alt: [jP6ccP3ql2I]  # Tupi (may be trimmed)
+
+  - id: bra-sui-2022
+    statsbomb_id: 3857269
+    kickoff_utc: "2022-11-28T16:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: Bju2Zb4nx8U
+    source: cazetv
+    kind: tv
+    split: val
+    alt: [-Z8NYKI8zr0]  # Bandeirantes
+
+  - id: eng-fra-2022
+    statsbomb_id: 3869354
+    kickoff_utc: "2022-12-10T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: swL8pmpCXQY
+    source: cazetv
+    kind: tv
+    split: val
+    alt: []
+
+  - id: arg-fra-2022
+    statsbomb_id: 3869685
+    kickoff_utc: "2022-12-18T15:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: etHcWGAroew
+    source: cazetv
+    kind: tv
+    split: test
+    alt: [xJHEsCJgcrk, _KJS3MVweHg]  # CazéTV tactical-cam (worldwide), Bandeirantes radio
+
+spares:
+  - id: bra-col-2024
+    statsbomb_id: 3939991
+    kickoff_utc: "2024-07-03T01:00:00Z"
+    competition: Copa America 2024
+    youtube: aqWhCnJBe-4
+    source: radio-tupi
+    kind: radio
+    alt: [F7-FOJSKfes]  # Jovem Pan
+  - id: arg-cro-2022
+    statsbomb_id: 3869519
+    kickoff_utc: "2022-12-13T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: wtawNQyyIvM
+    source: cazetv
+    kind: tv
+    alt: []
+  - id: fra-mar-2022
+    statsbomb_id: 3869552
+    kickoff_utc: "2022-12-14T19:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: jm97ljHnJpk
+    source: cazetv
+    kind: tv
+    alt: []
+  - id: fra-pol-2022
+    statsbomb_id: 3869152
+    kickoff_utc: "2022-12-04T15:00:00Z"
+    competition: FIFA World Cup 2022
+    youtube: MofUht70tdI
+    source: cazetv
+    kind: tv
+    alt: []
