@@ -1,0 +1,40 @@
+{
+ "test_match": "arg-fra-2022",
+ "question": "goal",
+ "level": "event",
+ "sweep": [
+  {
+   "min_gol_hits": 1,
+   "tuned": false,
+   "events": 6,
+   "caught": 6,
+   "triggers": 38,
+   "true_triggers": 6,
+   "recall": 1.0,
+   "precision": 0.15789473684210525,
+   "highlight_minutes": 36.2
+  },
+  {
+   "min_gol_hits": 2,
+   "tuned": true,
+   "events": 6,
+   "caught": 3,
+   "triggers": 17,
+   "true_triggers": 3,
+   "recall": 0.5,
+   "precision": 0.17647058823529413,
+   "highlight_minutes": 12.1
+  },
+  {
+   "min_gol_hits": 3,
+   "tuned": false,
+   "events": 6,
+   "caught": 1,
+   "triggers": 8,
+   "true_triggers": 1,
+   "recall": 0.16666666666666666,
+   "precision": 0.125,
+   "highlight_minutes": 4.6
+  }
+ ]
+}

@@ -4,7 +4,7 @@ MODAL := uv run modal
 VOLUME := lal-data
 
 .PHONY: setup test events sources audio upload smoke transcribe pull align windows teacher-packs labels \
-	gold-sample gold zeroshot finetune calibrate predict bench review-pool review eval demo clips plots all \
+	gold-sample gold zeroshot finetune calibrate predict bench review-pool review eval keyword-sweep demo clips plots all \
 	report new-match
 
 setup:            ## local env (light: no torch/laya locally)
@@ -77,6 +77,9 @@ review:           ## review page on http://127.0.0.1:8765
 
 eval:             ## results on the gold set + event level -> outputs/results.json
 	$(PY) -m lal.evaluate --ft $(RUN)-cal --ft-raw $(RUN)-T1
+
+keyword-sweep:    ## keyword goal rule at 1/2/3 "gol" hits, event level -> outputs/keyword_sweep.json
+	$(PY) -m lal.keyword_sweep
 
 demo:             ## streaming replay of the test match -> outputs/timeline_*.json
 	$(PY) -m lal.stream_demo --tag $(RUN)-cal

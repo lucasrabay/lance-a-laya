@@ -22,6 +22,8 @@ method (89 candidates).
 
 - **Goals.** Fine-tuned Laya caught **all 6 goals with zero false alarms**, flagging 7 minutes of play.
   Keyword rules found 3 of 6 and raised 17 alerts, because "gol" is everywhere in PT-BR narration.
+  Firing on a single "gol" finds all 6, but with 38 alerts (`make keyword-sweep`,
+  [`outputs/keyword_sweep.json`](outputs/keyword_sweep.json)).
 - **Every question vs. both baselines.** Fine-tuned beats keywords and zero-shot Laya on all five questions
   at window level.
   - It wins most clearly where keywords struggle: goal F1 0.70 vs 0.17 (AP 0.93 vs 0.27), controversy AP
