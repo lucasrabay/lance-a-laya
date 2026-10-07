@@ -3,6 +3,9 @@
 **Real-time football highlights from Brazilian Portuguese (PT-BR) narration, with a fine-tuned
 [Laya](https://github.com/NandhaKishorM/laya) decision model.**
 
+**Model weights:** [LucasRabay/lance-a-laya on Hugging Face](https://huggingface.co/LucasRabay/lance-a-laya)
+(fine-tuned `laya-multilingual`, with calibration, thresholds and a usage example).
+
 The pipeline:
 
 1. Listens to the TV or radio narration of a match and transcribes it.
